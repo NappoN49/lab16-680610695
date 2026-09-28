@@ -196,7 +196,7 @@ export default function AdminEnrollmentsPage() {
   //   courses.find((c) => c.courseId === courseId)?.courseTitle ?? "-";
 
   const rows = NewEnroll.filter((course) => {
-    if (mode === "course") return filterCourse === "all" || course.courseId === filterCourse;
+    if (mode === "course") return filterCourse === "all" || course.courseCode === filterCourse;
     if (filterStudent === "all") return true;
 
     let hasDek = false;
