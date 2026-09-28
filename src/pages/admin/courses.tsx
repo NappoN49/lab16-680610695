@@ -427,7 +427,7 @@ export default function AdminEnrollmentsPage() {
                     </ComboboxValue>
                   </ComboboxChips>
                   <ComboboxContent anchor={anchor}>
-                    {/* <ComboboxEmpty>No items found.</ComboboxEmpty> */}
+                    <ComboboxEmpty></ComboboxEmpty>
                     <ComboboxList>
                       {(item) => (
                         <ComboboxItem key={item} value={item}>
